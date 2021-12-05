@@ -43,7 +43,7 @@ def predict():
             "Outlet_Type": Outlet_Type
             }
        
-       response = requests.post('https://stores-sales-api.herokuapp.com/predict', json=data)
+       response = requests.post('https://sales-prediction-store.herokuapp.com/predict', json=data)
        result=response.text
        output=result.split(":",1)[1]
        output=output.replace("}","")
