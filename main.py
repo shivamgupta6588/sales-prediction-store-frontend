@@ -47,7 +47,7 @@ def predict():
        result=response.text
        output=result.split(":",1)[1]
        output=output.replace("}","")
-       output=int(output)
+     
        return render_template('home.html',output=output)
 
 
